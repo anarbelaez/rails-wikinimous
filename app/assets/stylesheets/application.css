@@ -1,15 +1,98 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+:root {
+  --electric-blue: rgb(126, 255, 245);
+  --neon-blue: rgb(24, 220, 255);
+  --light-slate-blue: rgb(125, 95, 255);
+  --light-red: rgb(255, 77, 77);
+  --winter-green: rgb(50, 255, 126);
+  --mandarin-sorbet: rgb(255, 175, 64);
+  --dark: rgb(17, 17, 17);
+}
+
+body {
+  background-color: var(--dark);
+  color: whitesmoke;
+}
+
+h1 {
+  letter-spacing: 0.2em;
+  /* text-shadow: 0.7px 0.7px 0px var(--neon-blue); */
+  font-family: 'Kanit', sans-serif;
+}
+
+.w-name h1 {
+  width: 1.7em;
+  height: 1.7em;
+  padding: 0 0 3px 0;
+  background: rgb(200,71,51);
+  background: linear-gradient(130deg, rgba(200,71,51,1) 0%, rgba(163,0,93,1) 100%);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text */
+.text-whitesmoke {
+  color: whitesmoke !important;
+}
+
+.text-kanit {
+}
+
+.text-tiro-bangla {
+}
+
+/* Backgrounds */
+.bg-transparent {
+  background-color: transparent;
+}
+
+/* Borders */
+.bord-bottom {
+  border-width: 0px 0px 0.5px 0px;
+  border-style: solid;
+}
+
+.border-gray {
+  border-color: rgba(241, 241, 241, 0.1);
+}
+
+/* Card */
+.card-shadow {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-main-post {
+  overflow: hidden;
+}
+
+.card-main-post > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-main-post p {
+  opacity: .7;
+}
+
+
+.card-post {
+  overflow: hidden;
+  height: 110px;
+}
+
+.card-post img {
+  height: 100%;
+  width: 100px;
+  object-fit: cover;
+}
+
+.card-post p {
+  opacity: .6;
+  font-size: 13px;
+}

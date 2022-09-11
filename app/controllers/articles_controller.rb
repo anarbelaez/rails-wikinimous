@@ -3,7 +3,6 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all
-    @articles_selected = Article.last(4)
   end
 
   def show
